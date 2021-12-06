@@ -155,10 +155,6 @@ router.get("/city", function (req, res) {
     first = response[0].first;
     last = response[0].last;
     if (err) throw err;
-    // res.render("city", {
-    //   first: first,
-    //   last: last,
-    // });
     var getQuery2 = "select cityName from branch2";
     con.query(getQuery2, function (err, response) {
       console.log(response);
